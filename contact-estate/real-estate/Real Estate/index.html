@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Estate Section</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  
+
+</head>
+<body>
+<!-- section1 -->
+  <section class="real-estate-section">
+
+<header class="navbar">
+  <div class="logo">
+    <i class="fas fa-chart-bar"></i>
+    <span>PHELIX</span>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#"><span class="hover-animate-text"><span class="text-top">HOME</span><span class="text-bottom">HOME</span></span></a>
+    <a href="#"><span class="hover-animate-text"><span class="text-top">ABOUT</span><span class="text-bottom">ABOUT</span></span></a>
+    <a href="#"><span class="hover-animate-text"><span class="text-top">CONTACT</span><span class="text-bottom">CONTACT</span></span></a>
+    <a href="#"><span class="hover-animate-text"><span class="text-top">PROPERTIES</span><span class="text-bottom">PROPERTIES</span></span></a>
+    <a href="#">
+      <span class="hover-animate-text">
+        <span class="text-top">CART</span>
+        <span class="text-bottom">CART</span>
+      </span>
+      <span class="cart-count">0</span>
+    </a>
+
+    <!-- Explore button for mobile view -->
+    <button class="explore-btn mobile-only">
+      <span class="diamond">◆</span>
+      <span class="hover-animate-text">
+        <span class="text-top">EXPLORE PROPERTIES</span>
+        <span class="text-bottom">EXPLORE PROPERTIES</span>
+      </span>
+      <span class="diamond">◆</span>
+    </button>
+  </nav>
+
+  <!-- Explore button for desktop view -->
+  <button class="explore-btn desktop-only">
+    <span class="diamond">◆</span>
+    <span class="hover-animate-text">
+      <span class="text-top">EXPLORE PROPERTIES</span>
+      <span class="text-bottom">EXPLORE PROPERTIES</span>
+    </span>
+    <span class="diamond">◆</span>
+  </button>
+</header>
+
+
+
+
+
+    <main class="hero-section">
+      <p class="get-in-touch">GET IN TOUCH</p>
+      <h1 class="headline">LET'S TALK</h1>
+      <h2 class="subheadline">REAL ESTATE</h2>
+      <p class="desc-text">
+        We’d love to hear from you! Get in touch with our friendly team for all your real estate needs.
+      </p>
+<div class="social-icons">
+  <a href="#" class="icon-link">
+    <div class="icon-hover">
+      <div class="icon-wrap">
+        <span class="icon-top"><i class="fa-brands fa-instagram"></i></span>
+        <span class="icon-bottom"><i class="fa-brands fa-instagram"></i></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="#" class="icon-link">
+    <div class="icon-hover">
+      <div class="icon-wrap">
+        <span class="icon-top"><i class="fa-brands fa-x-twitter"></i></span>
+        <span class="icon-bottom"><i class="fa-brands fa-x-twitter"></i></span>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="icon-link">
+    <div class="icon-hover">
+      <div class="icon-wrap">
+        <span class="icon-top"><i class="fa-brands fa-linkedin-in"></i></span>
+        <span class="icon-bottom"><i class="fa-brands fa-linkedin-in"></i></span>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="icon-link">
+    <div class="icon-hover">
+      <div class="icon-wrap">
+        <span class="icon-top"><i class="fa-brands fa-youtube"></i></span>
+        <span class="icon-bottom"><i class="fa-brands fa-youtube"></i></span>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="icon-link">
+    <div class="icon-hover">
+      <div class="icon-wrap">
+        <span class="icon-top"><i class="fa-brands fa-facebook-f"></i></span>
+        <span class="icon-bottom"><i class="fa-brands fa-facebook-f"></i></span>
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+
+    </main>
+  </section>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+</script>
+
+
+
+<!-- section2 -->
+<section class="contact-section">
+  <div class="contact-container">
+    <form class="contact-form" action="submit.php" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name"/>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone"/>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject"/>
+
+      <label for="desc">Description</label>
+      <textarea id="desc" rows="5"></textarea>
+
+      <button type="submit">SEND MESSAGE</button>
+    </form>
+  </div>
+</section>
+<!-- section3 -->
+<section class="contact-section">
+  <!-- Email -->
+  <div class="contact-box">
+    <i class="fas fa-envelope"></i>
+    <div class="contact-title">EMAIL</div>
+    <div class="contact-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</div>
+    <div class="contact-link"><a href="mailto:hi@urbanus.com">hi@urbanus.com</a></div>
+  </div>
+
+  <!-- Phone -->
+  <div class="contact-box">
+    <i class="fas fa-phone-alt"></i>
+    <div class="contact-title">PHONE</div>
+    <div class="contact-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</div>
+    <div class="contact-link"><a href="tel:+15555555555">+1 (555) 555-5555</a></div>
+  </div>
+
+  <!-- Office -->
+  <div class="contact-box">
+    <i class="fas fa-map-marker-alt"></i>
+    <div class="contact-title">OFFICE</div>
+    <div class="contact-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</div>
+    <div class="contact-link"><a href="#">1276 Hicksville Rd, New York</a></div>
+  </div>
+</section>
+
+<div class="mission-line"></div>
+
+<!-- section 3 -->
+<section class="faq-real">
+  <h5 class="faq-heading-small">FAQ</h5>
+  <h2 class="faq-heading-big">COMMON</h2>
+  <h2 class="faq-heading-big second">QUESTIONS</h2>
+
+  <div class="faq-boxes">
+<div class="faq-box">
+  <div class="faq-header">
+    <p class="faq-question">HOW DO I START THE HOME-BUYING PROCESS?</p>
+    <span class="plus-icon">+</span>
+  </div>
+  <div class="faq-answer">
+The first step is to determine your budget and get pre-approved for a mortgage. Then, work with a real estate agent to find homes that match your needs and preferences.
+  </div>
+</div>
+
+
+    <div class="faq-box">
+      <div class="faq-header">
+      <p class="faq-question"> HOW LONG DOES IT TAKE TO SELL A HOME?</p>
+      <span class="plus-icon">+</span>
+    </div>
+      <div class="faq-answer">
+The time it takes to sell a home depends on market conditions, pricing, and location. On average, homes sell within 30–60 days, but proper staging and pricing can speed up the process.
+  </div>
+</div>
+  
+    <div class="faq-box">
+      <div class="faq-header">
+      <p class="faq-question">DO I NEED A REAL ESTATE AGENT TO BUY OR SELL A HOME?</p>
+      <span class="plus-icon">+</span>
+    </div>
+      <div class="faq-answer">
+While it’s possible to buy or sell a home on your own, a real estate agent provides expert guidance, market insights, and negotiation skills that can help you get the best deal.
+  </div>
+</div>
+
+
+
+    <div class="faq-box">
+      <div class="faq-header">
+      <p class="faq-question">WHAT COSTS ARE INVOLVED IN BUYING A HOME?</p>
+      <span class="plus-icon">+</span>
+    </div>
+      <div class="faq-answer">In addition to the purchase price, buyers should budget for closing costs, home inspections, property taxes, and homeowners insurance. Your real estate agent can provide a detailed cost breakdown.
+  </div>
+</div>
+
+
+
+    <div class="faq-box">
+      <div class="faq-header">
+      <p class="faq-question">WHAT IS THE BEST TIME TO BUY OR SELL A HOME?</p>
+      <span class="plus-icon">+</span>
+    </div>
+      <div class="faq-answer">
+A real estate agent can provide a Comparative Market Analysis (CMA) to assess your home's value based on similar properties in your area. Online home valuation tools can also give you an estimate.
+  </div>
+</div>
+
+
+
+    <div class="faq-box">
+      <div class="faq-header">
+      <p class="faq-question">WHAT IS THE FIRST STEP IN THE MORTGAGE PROCESS?</p>
+      <span class="plus-icon">+</span>
+    </div>
+      <div class="faq-answer">
+The real estate market varies, but spring and summer are typically the busiest seasons for buying and selling. However, there can be advantages to buying in the fall or winter when there’s less competition.
+  </div>
+</div>
+</div>
+
+</section>
+
+<script>
+  document.querySelectorAll('.faq-box').forEach(box => {
+    const icon = box.querySelector('.plus-icon');
+    const answer = box.querySelector('.faq-answer');
+
+    icon.addEventListener('click', () => {
+      const isActive = box.classList.contains('active');
+
+      // Close all other boxes if you want accordion-style behavior
+      document.querySelectorAll('.faq-box').forEach(b => {
+        b.classList.remove('active');
+        const a = b.querySelector('.faq-answer');
+        a.style.maxHeight = null;
+        a.style.opacity = 0;
+      });
+
+      if (!isActive) {
+        box.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        answer.style.opacity = 1;
+        icon.textContent = "–";
+      } else {
+        box.classList.remove('active');
+        answer.style.maxHeight = null;
+        answer.style.opacity = 0;
+        icon.textContent = "+";
+      }
+    });
+  });
+</script>
+
+
+
+
+
+  <footer class="footer-section">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="https://cdn.prod.website-files.com/67ec42f339f734bb9b78ef8c/67ec4987a6a3b0c1547094d1_footer-logo.svg" loading="lazy" alt="Footer Logo - Urbanus Webflow Template" class="logo-icon logo text">
+    </div>
+    <p class="footer-tagline">FIND YOUR DREAM HOME WITH CONFIDENCE</p>
+  </div>
+
+  <!-- footer navigation -->
+  <nav class="footer-nav">
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops">HOME</span>
+        <span class="texts bottoms">HOME</span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops">ABOUT</span>
+        <span class="texts bottoms">ABOUT</span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops">PROPERTIES</span>
+        <span class="texts bottoms">PROPERTIES</span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops">PRICING</span>
+        <span class="texts bottoms">PRICING</span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops">BLOG</span>
+        <span class="texts bottoms">BLOG</span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops">CONTACT</span>
+        <span class="texts bottoms">CONTACT</span>
+      </div>
+    </a>
+  </nav>
+
+  <div class="footer-socials">
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops"><i class="fab fa-instagram"></i></span>
+        <span class="texts bottoms"><i class="fab fa-instagram"></i></span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops"><i class="fab fa-twitter"></i></span>
+        <span class="texts bottoms"><i class="fab fa-twitter"></i></span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops"><i class="fab fa-linkedin-in"></i></span>
+        <span class="texts bottoms"><i class="fab fa-linkedin-in"></i></span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops"><i class="fab fa-youtube"></i></span>
+        <span class="texts bottoms"><i class="fab fa-youtube"></i></span>
+      </div>
+    </a>
+    <a href="#" class="hover-animate">
+      <div class="texts-wrapper">
+        <span class="texts tops"><i class="fab fa-facebook-f"></i></span>
+        <span class="texts bottoms"><i class="fab fa-facebook-f"></i></span>
+      </div>
+    </a>
+  </div>
+
+  <div class="back-to-top">
+    <a href="#" class="hover-animate">
+      <div class="circle-btn">
+        <span class="texts tops"><i class="fa-solid fa-arrow-up"></i></span>
+        <span class="texts bottoms"><i class="fa-solid fa-arrow-up"></i></span>
+      </div>
+    </a>
+    <div class="back-to-top-text">BACK TO TOP</div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <div class="hover-animate">
+        <div class="texts-wrapper">
+          <span class="static-text">CREATED BY </span>
+          <span class="animated-text">
+            <span class="texts tops">HUDA SHAIKH</span>
+            <span class="texts bottoms">HUDA SHAIKH</span>
+          </span>
+        </div>
+      </div>
+      <div class="hover-animate">
+        <div class="texts-wrapper">
+          <span class="static-text">POWERED BY</span>
+          <span class="animated-text">
+            <span class="texts tops">WEBFLOW</span>
+            <span class="texts bottoms">WEBFLOW</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <a href="#" class="hover-animate">
+        <div class="texts-wrapper">
+          <span class="texts tops">STYLE GUIDE</span>
+          <span class="texts bottoms">STYLE GUIDE</span>
+        </div>
+      </a>
+      <a href="#" class="hover-animate">
+        <div class="texts-wrapper">
+          <span class="texts tops">LICENSES</span>
+          <span class="texts bottoms">LICENSES</span>
+        </div>
+      </a>
+      <a href="#" class="hover-animate">
+        <div class="texts-wrapper">
+          <span class="texts tops">CHANGELOG</span>
+          <span class="texts bottoms">CHANGELOG</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  window.addEventListener("load", () => {
+    document.querySelector(".curtain-wrapper").classList.add("reveal");
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const backToTopBtn = document.querySelector(".circle-btn");
+
+    backToTopBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>
